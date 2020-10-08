@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.13.4)
 
 project(QChickenMain)
 
-##set(CMAKE_PREFIX_PATH   /home/user/Qt/5.15.1/gcc_64)
+set(CMAKE_PREFIX_PATH   /usr/lib/x86_64-linux-gnu/cmake/)
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O0 -fprofile-arcs -ftest-coverage")
 #set(CMAKE_CXX_OUTPUT_EXTENSION_REPLACE 1)
 
