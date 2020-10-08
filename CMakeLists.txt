@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.5)
 
 project(QChicken LANGUAGES CXX)
 
+#set(CMAKE_PREFIX_PATH "/home/user/Qt/5.15.1/gcc_64")
+
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 set(CMAKE_AUTOUIC ON)
@@ -27,26 +29,30 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets LinguistTools REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets LinguistTools REQUIRED)
 
-set(TS_FILES QChicken_pt_BR.ts)
+set(TS_FILES src/app/QChicken_pt_BR.ts src/api/Contabilidade.cpp src/api/Contabilidade.h)
 
-if(ANDROID)
-  add_library(QChicken SHARED
-    main.cpp
-    qchickenmain.cpp
-    qchickenmain.h
-    qchickenmain.ui
-    ${TS_FILES}
-  )
-else()
-  add_executable(QChicken
-    main.cpp
-    qchickenmain.cpp
-    qchickenmain.h
-    qchickenmain.ui
-    ${TS_FILES}
-  )
-endif()
+if (ANDROID)
+    add_library(QChicken SHARED
+            src/app/main.cpp
+            src/app/qchickenmain.cpp
+            src/app/qchickenmain.h
+            src/app/qchickenmain.ui
+            ${TS_FILES}
+            )
+else ()
+    add_executable(QChicken
+            src/app/main.cpp
+            src/app/qchickenmain.cpp
+            src/app/qchickenmain.h
+            src/app/qchickenmain.ui
+            ${TS_FILES}
+            )
+    add_library(QChickenAPI SHARED
+            src/api/Contabilidade.cpp
+            src/api/Contabilidade.h
+            )
+endif ()
 
-target_link_libraries(QChicken PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
-
+target_link_libraries(QChicken PRIVATE Qt${QT_VERSION_MAJOR}::Widgets
+        QChickenAPI)
 qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
