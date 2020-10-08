@@ -21,9 +21,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
+      
+      - name: lcov install
+        run: sudo apt install lcov qt5-default cmake
 
       # Run
-      - name: Codecov
-        uses: codecov/codecov-action@v1.0.13
+      - name: Run
+        run: lcov --capture --directory . --output-file coverage.info; lcov --remove coverage.info '/usr/*' --output-file coverage.info; lcov --list coverage.info; bash <(curl -s https://codecov.io/bash) -f coverage.info || echo "Codecov did not collect coverage reports"
 
