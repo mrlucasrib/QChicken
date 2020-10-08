@@ -12,7 +12,6 @@ set(CMAKE_AUTORCC ON)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-#enable_testing()
 
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets LinguistTools Test REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets LinguistTools Test REQUIRED)
@@ -22,6 +21,5 @@ find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets LinguistTools Test REQUIRE
 add_subdirectory(src/api)
 add_subdirectory(src/app)
 
-set(TS_FILES QChicken_pt_BR.ts)
 
 target_link_libraries(QChicken PUBLIC QChickenAPI)

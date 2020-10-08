@@ -26,7 +26,7 @@
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug">
         <ADDITIONAL_GENERATION_ENVIRONMENT>
           <envs>
-            <env name="CMAKE_PREFIX_PATH" value="$PROJECT_DIR$/../../../../user/Qt/5.15.1/gcc_64" />
+            <env name="CMAKE_PREFIX_PATH" value="$USER_HOME$/Qt/5.15.1/gcc_64/" />
           </envs>
         </ADDITIONAL_GENERATION_ENVIRONMENT>
       </configuration>
@@ -37,8 +37,6 @@
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt.user" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/QChicken_pt_BR.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/QChicken_pt_BR.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +47,11 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1iZHaZXIxhLRd8L9QY0CKyk0elm" />
@@ -62,7 +65,8 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+    <property name="settings.editor.selected.configurable" value="dynamic.analysis.tools" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -124,7 +128,16 @@
       <workItem from="1602160307361" duration="449000" />
       <workItem from="1602160789160" duration="7000" />
       <workItem from="1602161122679" duration="403000" />
+      <workItem from="1602179544623" duration="1573000" />
     </task>
+    <task id="LOCAL-00001" summary="Basic unit test">
+      <created>1602179733942</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602179733942</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +154,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Basic unit test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic unit test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="278" y="59" width="800" height="684" key="#New_File_Extensions" timestamp="1602111313158">
@@ -167,10 +184,14 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1320" height="172" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1602130074139" />
-    <state x="134" y="27" width="1022" height="737" key="SettingsEditor" timestamp="1602130709503">
+    <state x="418" y="81" width="519" height="640" key="RollbackChangesDialog" timestamp="1602179644493">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="134" y="27" width="1022" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1602130709503" />
+    <state x="418" y="81" width="519" height="640" key="RollbackChangesDialog/0.27.1366.741@0.27.1366.741" timestamp="1602179644493" />
+    <state x="134" y="27" width="1022" height="737" key="SettingsEditor" timestamp="1602181116957">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="134" y="27" width="1022" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1602181116957" />
     <state x="459" y="298" width="438" height="206" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1602110664760">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
