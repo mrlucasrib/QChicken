@@ -1,7 +1,6 @@
 #ifndef QCHICKENMAIN_H
 #define QCHICKENMAIN_H
-
-#include <QMainWindow>
+#include<QMainWindow>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class QChickenMain; }
