@@ -10,13 +10,16 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    qchickenmain.cpp
+    qchickenmain.cpp \
+    relatoriowindow.cpp
 
 HEADERS += \
-    qchickenmain.h
+    qchickenmain.h \
+    relatoriowindow.h
 
 FORMS += \
-    qchickenmain.ui
+    qchickenmain.ui \
+    relatoriowindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

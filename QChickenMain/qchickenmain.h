@@ -15,6 +15,9 @@ public:
     QChickenMain(QWidget *parent = nullptr);
     ~QChickenMain();
 
+private slots:
+    void on_registerbtn_clicked();
+
 private:
     Ui::QChickenMain *ui;
 };
