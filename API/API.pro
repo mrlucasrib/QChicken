@@ -1,6 +1,6 @@
 TEMPLATE = subdirs
-
+CONFIG += ordered
 SUBDIRS += \
-    UnitTest \
     Contabilidade \
+    UnitTest \
 
