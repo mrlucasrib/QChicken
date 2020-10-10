@@ -8,6 +8,9 @@ TEMPLATE = app
 
 SOURCES +=  tst_unittests.cpp
 
+QMAKE_CXXFLAGS += --coverage
+QMAKE_LFLAGS += --coverage
+
 win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../Contabilidade/release/ -lContabilidade
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../Contabilidade/debug/ -lContabilidade
 else:mac: LIBS += -F$$OUT_PWD/../Contabilidade/ -framework Contabilidade
