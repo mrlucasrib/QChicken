@@ -1,10 +1,12 @@
 #include "relatoriowindow.h"
 #include "ui_relatoriowindow.h"
-
+#include<iostream>
+using namespace std;
 RelatorioWindow::RelatorioWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::RelatorioWindow)
 {
+
     ui->setupUi(this);
 
     //grafico de linha
@@ -21,7 +23,7 @@ RelatorioWindow::RelatorioWindow(QWidget *parent) :
     QChartView *chartView = new QChartView(chart);
     chartView->setRenderHint(QPainter::Antialiasing);
     chartView->setParent(ui->graphicsView_2);
-    chartView->setMinimumSize(387,280);
+    chartView->setMinimumSize(387,235);
 
 
     //grafico de pizza
@@ -33,7 +35,7 @@ RelatorioWindow::RelatorioWindow(QWidget *parent) :
     piechart->setTitle("Lucro por Produto");
     QChartView *piechartview =new QChartView(piechart);
     piechartview->setParent(ui->graphicsView);
-    piechartview->setMinimumSize(387,280);
+    piechartview->setMinimumSize(387,235);
 
 
     //Grafico de barras
@@ -62,9 +64,13 @@ RelatorioWindow::RelatorioWindow(QWidget *parent) :
     barchart->setAxisX(axis,barseries);
     QChartView *barchartView = new QChartView(barchart);
     barchartView->setParent(ui->graphicsView_3);
-    barchartView->setMinimumSize(387,280);
+    barchartView->setMinimumSize(782,237);
 }
 RelatorioWindow::~RelatorioWindow()
 {
     delete ui;
+}
+void RelatorioWindow::on_pushButton_clicked(){
+
+
 }
