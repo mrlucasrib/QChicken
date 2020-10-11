@@ -11,12 +11,12 @@ bool Contabilidade::makeReport()
 
 
 //
-double Contabilidade::getCost(const string&){
+//double Contabilidade::getCost(const string&){
 
-}
-double Contabilidade::getProfit(const string&){
+//}
+//double Contabilidade::getProfit(const string&){
 
-}
+//}
 
 //
 bool Contabilidade::addCost(const string& name, const double& value){
