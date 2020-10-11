@@ -1,4 +1,6 @@
 TEMPLATE = subdirs
 
 SUBDIRS += \
-    src/api/tests
+    API \
+    QChickenMain \
+

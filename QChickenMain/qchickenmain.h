@@ -1,6 +1,7 @@
 #ifndef QCHICKENMAIN_H
 #define QCHICKENMAIN_H
-#include<QMainWindow>
+
+#include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class QChickenMain; }
@@ -13,6 +14,9 @@ class QChickenMain : public QMainWindow
 public:
     QChickenMain(QWidget *parent = nullptr);
     ~QChickenMain();
+
+private slots:
+    void on_registerbtn_clicked();
 
 private:
     Ui::QChickenMain *ui;
