@@ -21,6 +21,7 @@ private:
 
 public:
     Contabilidade();
+
     bool makeReport();
     ~Contabilidade();
 
