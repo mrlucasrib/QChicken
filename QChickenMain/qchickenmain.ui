@@ -33,12 +33,12 @@
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_12">
            <item>
-            <widget class="QLineEdit" name="lineEdit_10"/>
+            <widget class="QSpinBox" name="spinBox_5"/>
            </item>
            <item>
             <widget class="QLabel" name="label_21">
              <property name="text">
-              <string>TextLabel</string>
+              <string>unidade</string>
              </property>
             </widget>
            </item>
@@ -58,12 +58,12 @@
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_11">
            <item>
-            <widget class="QLineEdit" name="lineEdit_9"/>
+            <widget class="QSpinBox" name="spinBox_6"/>
            </item>
            <item>
             <widget class="QLabel" name="label_19">
              <property name="text">
-              <string>TextLabel</string>
+              <string>unidade</string>
              </property>
             </widget>
            </item>
@@ -83,12 +83,12 @@
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_15">
            <item>
-            <widget class="QLineEdit" name="lineEdit_13"/>
+            <widget class="QSpinBox" name="spinBox_4"/>
            </item>
            <item>
             <widget class="QLabel" name="label_27">
              <property name="text">
-              <string>TextLabel</string>
+              <string>duzia</string>
              </property>
             </widget>
            </item>
@@ -108,12 +108,12 @@
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_3">
            <item>
-            <widget class="QLineEdit" name="lineEdit_2"/>
+            <widget class="QSpinBox" name="spinBox_3"/>
            </item>
            <item>
             <widget class="QLabel" name="label_4">
              <property name="text">
-              <string>TextLabel</string>
+              <string>duzia</string>
              </property>
             </widget>
            </item>
@@ -133,12 +133,12 @@
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_14">
            <item>
-            <widget class="QLineEdit" name="lineEdit_12"/>
+            <widget class="QSpinBox" name="spinBox_2"/>
            </item>
            <item>
             <widget class="QLabel" name="label_25">
              <property name="text">
-              <string>TextLabel</string>
+              <string>unidade</string>
              </property>
             </widget>
            </item>
@@ -158,12 +158,12 @@
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_13">
            <item>
-            <widget class="QLineEdit" name="lineEdit_11"/>
+            <widget class="QSpinBox" name="spinBox"/>
            </item>
            <item>
             <widget class="QLabel" name="label_23">
              <property name="text">
-              <string>TextLabel</string>
+              <string>kg</string>
              </property>
             </widget>
            </item>
@@ -229,7 +229,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>
