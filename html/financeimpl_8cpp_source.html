@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>QChicken: Código-Fonte de API/Contabilidade/financeimpl.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">QChicken
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68d23e7882bbc468776c250e28326a64.html">API</a></li><li class="navelem"><a class="el" href="dir_8fdacc1ceb255e2c03842f88cb35a155.html">Contabilidade</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">financeimpl.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="financeimpl_8cpp.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="financeimpl_8h.html">financeimpl.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_finance_impl.html#accb9a2cbe1e990d094bcce217235d54b">FinanceImpl::totalFinances</a> = 0;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_finance_impl.html#a6f5461efb717d571658696d9b6a00b5d">    5</a></span>&#160;<a class="code" href="class_finance_impl.html#a6f5461efb717d571658696d9b6a00b5d">FinanceImpl::FinanceImpl</a>()</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_finance_impl.html#af31dde2c704ea6577872fcb0ddeba6f0">    9</a></span>&#160;<a class="code" href="class_finance_impl.html#af31dde2c704ea6577872fcb0ddeba6f0">FinanceImpl::~FinanceImpl</a>()</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_finance_impl.html#a6f952bb8ad0c28fb8c9a8da33d78bfd3">   13</a></span>&#160;<a class="code" href="class_finance_impl.html#a6f5461efb717d571658696d9b6a00b5d">FinanceImpl::FinanceImpl</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; token, <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; valuePerUnit, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; type, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; totalNumber, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; Id, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; dateMonth){</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    this-&gt;token = <a class="code" href="class_finance_impl.html#ac01f83dd2d1425c7af6022bddaab6c56">token</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    this-&gt;dateMonth = <a class="code" href="class_finance_impl.html#a2fb3ae45039feab4a1b00a54df70b523">dateMonth</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    this-&gt;valuePerUnit = <a class="code" href="class_finance_impl.html#ad96ea842d282a447c8346ada26ffcb7f">valuePerUnit</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    this-&gt;type = <a class="code" href="class_finance_impl.html#a3166c3e0e55a51fb729c388f21db3749">type</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    this-&gt;totalNumber = <a class="code" href="class_finance_impl.html#acf59884e39ce1acf66ce9703812caa7d">totalNumber</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    this-&gt;Id = <a class="code" href="class_finance_impl.html#ac495640e84d0459b2ba5bab1b134eb6d">Id</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_finance.html#a312612e444618b33ccea8c72e693eeb4">   22</a></span>&#160;<a class="code" href="class_finance.html">Finance</a>* <a class="code" href="class_finance.html#a312612e444618b33ccea8c72e693eeb4">Finance::createFinance</a>(){</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_finance_impl.html">FinanceImpl</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_finance_impl.html#a2e94a1c51b16ff426a39cad38f52e70d">   25</a></span>&#160;<a class="code" href="class_finance.html">Finance</a>* <a class="code" href="class_finance_impl.html#a2e94a1c51b16ff426a39cad38f52e70d">FinanceImpl::createFinance</a>(){</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_finance_impl.html#a6f5461efb717d571658696d9b6a00b5d">FinanceImpl</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_finance_impl.html#a477749e555d4bf4e8da2b46140bf031b">   29</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_finance_impl.html#a477749e555d4bf4e8da2b46140bf031b">FinanceImpl::calculate</a>(){</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_finance_impl.html#aec759d97f370f477d1c43265cfcc0e52">getTotalNumber</a>() * this-&gt;<a class="code" href="class_finance_impl.html#aef65e1674d91fb3d5372e23c55b12378">getValue</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_finance_impl.html#aba6d02f4884da89eb41386dda5d64699">   33</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_finance_impl.html#aba6d02f4884da89eb41386dda5d64699">FinanceImpl::getTotalFinances</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_finance_impl.html#accb9a2cbe1e990d094bcce217235d54b">totalFinances</a> + 1;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_finance_impl.html#adcd457fbcd096916c5c627e34ad3cbd2">   37</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_finance_impl.html#adcd457fbcd096916c5c627e34ad3cbd2">FinanceImpl::totalFinancesAdd</a>(){</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_finance_impl.html#accb9a2cbe1e990d094bcce217235d54b">totalFinances</a>++;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_finance_impl.html#a82127847593a291199e6f16d292f8f28">   42</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="class_finance_impl.html#a82127847593a291199e6f16d292f8f28">FinanceImpl::getToken</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_finance_impl.html#ac01f83dd2d1425c7af6022bddaab6c56">token</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_finance_impl.html#a5f35e4ea6ba9f1adad094d6c20953c89">   45</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_finance_impl.html#a5f35e4ea6ba9f1adad094d6c20953c89">FinanceImpl::getDateMonth</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_finance_impl.html#a2fb3ae45039feab4a1b00a54df70b523">dateMonth</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_finance_impl.html#aef65e1674d91fb3d5372e23c55b12378">   48</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_finance_impl.html#aef65e1674d91fb3d5372e23c55b12378">FinanceImpl::getValue</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_finance_impl.html#ad96ea842d282a447c8346ada26ffcb7f">valuePerUnit</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_finance_impl.html#ad35ada76cafe2f18fc4bfbc7946732e4">   51</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_finance_impl.html#ad35ada76cafe2f18fc4bfbc7946732e4">FinanceImpl::getType</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_finance_impl.html#a3166c3e0e55a51fb729c388f21db3749">type</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_finance_impl.html#aec759d97f370f477d1c43265cfcc0e52">   54</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_finance_impl.html#aec759d97f370f477d1c43265cfcc0e52">FinanceImpl::getTotalNumber</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_finance_impl.html#acf59884e39ce1acf66ce9703812caa7d">totalNumber</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_finance_impl.html#a6c43f18b3f0583d62277a79ef5770a55">   58</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_finance_impl.html#a6c43f18b3f0583d62277a79ef5770a55">FinanceImpl::getId</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_finance_impl.html#ac495640e84d0459b2ba5bab1b134eb6d">Id</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_finance_impl.html#a84a1ee0b23c4fcccda02cf4c86f8f88c">   62</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_finance_impl.html#a84a1ee0b23c4fcccda02cf4c86f8f88c">FinanceImpl::setToken</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; token){</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    this-&gt;token = <a class="code" href="class_finance_impl.html#ac01f83dd2d1425c7af6022bddaab6c56">token</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_finance_impl.html#af320ccb4fa87967610f8efeafc242144">   65</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_finance_impl.html#af320ccb4fa87967610f8efeafc242144">FinanceImpl::setDateMonth</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; dateMonth){</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    this-&gt;dateMonth = <a class="code" href="class_finance_impl.html#a2fb3ae45039feab4a1b00a54df70b523">dateMonth</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_finance_impl.html#a50ccc148330b7f35e53935934093f427">   68</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_finance_impl.html#a50ccc148330b7f35e53935934093f427">FinanceImpl::setValue</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; value){</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    this-&gt;<a class="code" href="class_finance_impl.html#ad96ea842d282a447c8346ada26ffcb7f">valuePerUnit</a> = value;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_finance_impl.html#a0c5ab6b81547c96f18203886a54519a2">   71</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_finance_impl.html#a0c5ab6b81547c96f18203886a54519a2">FinanceImpl::setType</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; type){</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    this-&gt;type = <a class="code" href="class_finance_impl.html#a3166c3e0e55a51fb729c388f21db3749">type</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_finance_impl.html#a4d55d0512f4c6d7676cc9c3acb6624eb">   75</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_finance_impl.html#a4d55d0512f4c6d7676cc9c3acb6624eb">FinanceImpl::setTotalNumber</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; totalNumber){</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    this-&gt;totalNumber = <a class="code" href="class_finance_impl.html#acf59884e39ce1acf66ce9703812caa7d">totalNumber</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_finance_impl.html#ae57436134b314b2c673f84452bcde6af">   78</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_finance_impl.html#ae57436134b314b2c673f84452bcde6af">FinanceImpl::setId</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; Id){</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    this-&gt;Id = <a class="code" href="class_finance_impl.html#ac495640e84d0459b2ba5bab1b134eb6d">Id</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_finance_impl_html_ac495640e84d0459b2ba5bab1b134eb6d"><div class="ttname"><a href="class_finance_impl.html#ac495640e84d0459b2ba5bab1b134eb6d">FinanceImpl::Id</a></div><div class="ttdeci">int Id</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8h_source.html#l00013">financeimpl.h:13</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_ae57436134b314b2c673f84452bcde6af"><div class="ttname"><a href="class_finance_impl.html#ae57436134b314b2c673f84452bcde6af">FinanceImpl::setId</a></div><div class="ttdeci">void setId(const int &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8cpp_source.html#l00078">financeimpl.cpp:78</a></div></div>
+<div class="ttc" id="afinanceimpl_8h_html"><div class="ttname"><a href="financeimpl_8h.html">financeimpl.h</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_aec759d97f370f477d1c43265cfcc0e52"><div class="ttname"><a href="class_finance_impl.html#aec759d97f370f477d1c43265cfcc0e52">FinanceImpl::getTotalNumber</a></div><div class="ttdeci">int getTotalNumber() const</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8cpp_source.html#l00054">financeimpl.cpp:54</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_a5f35e4ea6ba9f1adad094d6c20953c89"><div class="ttname"><a href="class_finance_impl.html#a5f35e4ea6ba9f1adad094d6c20953c89">FinanceImpl::getDateMonth</a></div><div class="ttdeci">int getDateMonth() const</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8cpp_source.html#l00045">financeimpl.cpp:45</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_a2e94a1c51b16ff426a39cad38f52e70d"><div class="ttname"><a href="class_finance_impl.html#a2e94a1c51b16ff426a39cad38f52e70d">FinanceImpl::createFinance</a></div><div class="ttdeci">Finance * createFinance()</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8cpp_source.html#l00025">financeimpl.cpp:25</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_a4d55d0512f4c6d7676cc9c3acb6624eb"><div class="ttname"><a href="class_finance_impl.html#a4d55d0512f4c6d7676cc9c3acb6624eb">FinanceImpl::setTotalNumber</a></div><div class="ttdeci">void setTotalNumber(const int &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8cpp_source.html#l00075">financeimpl.cpp:75</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_ad35ada76cafe2f18fc4bfbc7946732e4"><div class="ttname"><a href="class_finance_impl.html#ad35ada76cafe2f18fc4bfbc7946732e4">FinanceImpl::getType</a></div><div class="ttdeci">int getType() const</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8cpp_source.html#l00051">financeimpl.cpp:51</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_aef65e1674d91fb3d5372e23c55b12378"><div class="ttname"><a href="class_finance_impl.html#aef65e1674d91fb3d5372e23c55b12378">FinanceImpl::getValue</a></div><div class="ttdeci">double getValue() const</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8cpp_source.html#l00048">financeimpl.cpp:48</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_adcd457fbcd096916c5c627e34ad3cbd2"><div class="ttname"><a href="class_finance_impl.html#adcd457fbcd096916c5c627e34ad3cbd2">FinanceImpl::totalFinancesAdd</a></div><div class="ttdeci">void totalFinancesAdd()</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8cpp_source.html#l00037">financeimpl.cpp:37</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_a82127847593a291199e6f16d292f8f28"><div class="ttname"><a href="class_finance_impl.html#a82127847593a291199e6f16d292f8f28">FinanceImpl::getToken</a></div><div class="ttdeci">string getToken() const</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8cpp_source.html#l00042">financeimpl.cpp:42</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_a477749e555d4bf4e8da2b46140bf031b"><div class="ttname"><a href="class_finance_impl.html#a477749e555d4bf4e8da2b46140bf031b">FinanceImpl::calculate</a></div><div class="ttdeci">double calculate()</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8cpp_source.html#l00029">financeimpl.cpp:29</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_acf59884e39ce1acf66ce9703812caa7d"><div class="ttname"><a href="class_finance_impl.html#acf59884e39ce1acf66ce9703812caa7d">FinanceImpl::totalNumber</a></div><div class="ttdeci">int totalNumber</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8h_source.html#l00013">financeimpl.h:13</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_af320ccb4fa87967610f8efeafc242144"><div class="ttname"><a href="class_finance_impl.html#af320ccb4fa87967610f8efeafc242144">FinanceImpl::setDateMonth</a></div><div class="ttdeci">void setDateMonth(const int &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8cpp_source.html#l00065">financeimpl.cpp:65</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_ad96ea842d282a447c8346ada26ffcb7f"><div class="ttname"><a href="class_finance_impl.html#ad96ea842d282a447c8346ada26ffcb7f">FinanceImpl::valuePerUnit</a></div><div class="ttdeci">double valuePerUnit</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8h_source.html#l00012">financeimpl.h:12</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_a0c5ab6b81547c96f18203886a54519a2"><div class="ttname"><a href="class_finance_impl.html#a0c5ab6b81547c96f18203886a54519a2">FinanceImpl::setType</a></div><div class="ttdeci">void setType(const int &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8cpp_source.html#l00071">financeimpl.cpp:71</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_a50ccc148330b7f35e53935934093f427"><div class="ttname"><a href="class_finance_impl.html#a50ccc148330b7f35e53935934093f427">FinanceImpl::setValue</a></div><div class="ttdeci">void setValue(const double &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8cpp_source.html#l00068">financeimpl.cpp:68</a></div></div>
+<div class="ttc" id="aclass_finance_html"><div class="ttname"><a href="class_finance.html">Finance</a></div><div class="ttdef"><b>Definition:</b> <a href="finance_8h_source.html#l00006">finance.h:6</a></div></div>
+<div class="ttc" id="aclass_finance_html_a312612e444618b33ccea8c72e693eeb4"><div class="ttname"><a href="class_finance.html#a312612e444618b33ccea8c72e693eeb4">Finance::createFinance</a></div><div class="ttdeci">virtual Finance * createFinance()=0</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8cpp_source.html#l00022">financeimpl.cpp:22</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_a3166c3e0e55a51fb729c388f21db3749"><div class="ttname"><a href="class_finance_impl.html#a3166c3e0e55a51fb729c388f21db3749">FinanceImpl::type</a></div><div class="ttdeci">int type</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8h_source.html#l00013">financeimpl.h:13</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html"><div class="ttname"><a href="class_finance_impl.html">FinanceImpl</a></div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8h_source.html#l00008">financeimpl.h:8</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_aba6d02f4884da89eb41386dda5d64699"><div class="ttname"><a href="class_finance_impl.html#aba6d02f4884da89eb41386dda5d64699">FinanceImpl::getTotalFinances</a></div><div class="ttdeci">int getTotalFinances() const</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8cpp_source.html#l00033">financeimpl.cpp:33</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_af31dde2c704ea6577872fcb0ddeba6f0"><div class="ttname"><a href="class_finance_impl.html#af31dde2c704ea6577872fcb0ddeba6f0">FinanceImpl::~FinanceImpl</a></div><div class="ttdeci">~FinanceImpl()</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8cpp_source.html#l00009">financeimpl.cpp:9</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_a84a1ee0b23c4fcccda02cf4c86f8f88c"><div class="ttname"><a href="class_finance_impl.html#a84a1ee0b23c4fcccda02cf4c86f8f88c">FinanceImpl::setToken</a></div><div class="ttdeci">void setToken(const string &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8cpp_source.html#l00062">financeimpl.cpp:62</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_a2fb3ae45039feab4a1b00a54df70b523"><div class="ttname"><a href="class_finance_impl.html#a2fb3ae45039feab4a1b00a54df70b523">FinanceImpl::dateMonth</a></div><div class="ttdeci">int dateMonth</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8h_source.html#l00013">financeimpl.h:13</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_accb9a2cbe1e990d094bcce217235d54b"><div class="ttname"><a href="class_finance_impl.html#accb9a2cbe1e990d094bcce217235d54b">FinanceImpl::totalFinances</a></div><div class="ttdeci">static int totalFinances</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8h_source.html#l00010">financeimpl.h:10</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_ac01f83dd2d1425c7af6022bddaab6c56"><div class="ttname"><a href="class_finance_impl.html#ac01f83dd2d1425c7af6022bddaab6c56">FinanceImpl::token</a></div><div class="ttdeci">string token</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8h_source.html#l00011">financeimpl.h:11</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_a6f5461efb717d571658696d9b6a00b5d"><div class="ttname"><a href="class_finance_impl.html#a6f5461efb717d571658696d9b6a00b5d">FinanceImpl::FinanceImpl</a></div><div class="ttdeci">FinanceImpl()</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8cpp_source.html#l00005">financeimpl.cpp:5</a></div></div>
+<div class="ttc" id="aclass_finance_impl_html_a6c43f18b3f0583d62277a79ef5770a55"><div class="ttname"><a href="class_finance_impl.html#a6c43f18b3f0583d62277a79ef5770a55">FinanceImpl::getId</a></div><div class="ttdeci">int getId() const</div><div class="ttdef"><b>Definition:</b> <a href="financeimpl_8cpp_source.html#l00058">financeimpl.cpp:58</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>
