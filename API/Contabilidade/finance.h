@@ -1,40 +1,31 @@
 #ifndef FINANCE_H
 #define FINANCE_H
 #include <string>
-
 using namespace std;
 
 class Finance
 {
 
-private:
-    static int totalFinances;
-    string token;
-    double valuePerUnit;
-    int type, totalNumber, Id, dateMonth; //0: Entrada 1: Saida
 public:
-
-    Finance();
-    Finance(const string&, const double&, const int&, const int&, const int&, const int&);
-    ~Finance();
-    // gets
-    string getToken() const;
-    int getDateMonth() const;
-    double getValue() const;
-    int getType() const;
-    int getTotalNumber() const;
-    int getId() const;
+    //gets
+    virtual string getToken() const = 0;
+    virtual int getDateMonth() const = 0;
+    virtual double getValue() const = 0;
+    virtual int getType() const = 0;
+    virtual int getTotalNumber() const = 0;
+    virtual int getId() const = 0;
     // sets
-    void setToken(const string&);
-    void setDateMonth(const int&);
-    void setValue(const double&);
-    void setType(const int&);
-    void setTotalNumber(const int&);
-    void setId(const int&);
-    //
-    double calculate();
-    int getTotalFinances() const;
-    static void totalFinancesAdd();
+    virtual void setToken(const string&) = 0;
+    virtual void setDateMonth(const int&) = 0;
+    virtual void setValue(const double&) = 0;
+    virtual void setType(const int&) = 0;
+    virtual void setTotalNumber(const int&) = 0;
+    virtual void setId(const int&) = 0;
+
+    virtual double calculate() = 0;
+    virtual int getTotalFinances() const = 0;
+    virtual void totalFinancesAdd() = 0;
+    virtual Finance* createFinance() = 0;
 };
 
 #endif // FINANCE_H

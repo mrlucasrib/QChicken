@@ -1,26 +1,33 @@
-#include "contabilidade.h"
+#include "contabilidadeimpl.h"
 
-Contabilidade::Contabilidade()
+ContabilidadeImpl::ContabilidadeImpl()
 {
 }
 
-bool Contabilidade::makeReport()
-{
-    return true;
+ContabilidadeImpl::~ContabilidadeImpl(){
+
 }
 
-bool Contabilidade::addFinance(Finance& finance) {
+Contabilidade* Contabilidade::createContabilidade(){
+    return new ContabilidadeImpl();
+}
+
+Contabilidade* ContabilidadeImpl::createContabilidade(){
+    return new ContabilidadeImpl();
+}
+
+bool ContabilidadeImpl::addFinance(Finance& finance) {
     try{
         finance.setId(finance.getTotalFinances());
         FinanceList.insert(pair <int, Finance*> (finance.getId(), &finance));
-        Finance::totalFinancesAdd();
+        finance.totalFinancesAdd();
         return true;
     }catch(exception ex){
         return false;
     }
 }
 
-bool Contabilidade::removeFinance(Finance& finance) {
+bool ContabilidadeImpl::removeFinance(Finance& finance) {
     try{
         if (FinanceList.find(finance.getId()) != FinanceList.end()) {
             FinanceList.erase(finance.getId());
@@ -31,7 +38,7 @@ bool Contabilidade::removeFinance(Finance& finance) {
     }
 }
 
-double Contabilidade::getTotalValuePerToken(const string& token){
+double ContabilidadeImpl::getTotalValuePerToken(const string& token){
     try{
         double TotalValue = 0;
         for (FinanceIterator it = FinanceList.begin(); it != FinanceList.end(); ++it) {
@@ -44,7 +51,7 @@ double Contabilidade::getTotalValuePerToken(const string& token){
         return -1;
     }
 }
-double* Contabilidade::getTokenValuePerMonth(const string& token){
+double* ContabilidadeImpl::getTokenValuePerMonth(const string& token){
     try{
         double* list = new double[12];
         for (int i=0; i<12; i++) list[i] = 0;
@@ -59,34 +66,29 @@ double* Contabilidade::getTokenValuePerMonth(const string& token){
     }
 }
 
-FinanceIterator Contabilidade::beginFinanceList() const {
+double* ContabilidadeImpl::getBalancePerMonth(){
+    try{
+        double* list = new double[12];
+        for (int i=0; i<12; i++) list[i] = 0;
+        for (FinanceIterator it = FinanceList.begin(); it != FinanceList.end(); ++it) {
+            if (it->second->getType() == 0) {
+                list[it->second->getDateMonth() - 1] += it->second->calculate();
+            }else list[it->second->getDateMonth()-1] -= it->second->calculate();
+        }
+        return list;
+    }catch(exception ex){
+        return nullptr;
+    }
+}
+
+FinanceIterator ContabilidadeImpl::beginFinanceList() const {
     return FinanceList.begin();
 }
 
-FinanceIterator Contabilidade::endFinanceList() const {
+FinanceIterator ContabilidadeImpl::endFinanceList() const {
     return FinanceList.end();
 }
 
 
 
 
-
-//double Contabilidade::getChickenFoodCosts() const{
-//    return this->ChickenFoodCosts;
-//}
-//double Contabilidade::getChickenSalesProfit() const{
-//    return this->ChickenSalesProfit;
-//}
-//double Contabilidade::getEggsSalesProfit() const{
-//    return this->EggsSalesProfit;
-//}
-
-//void Contabilidade::setChickenFoodCosts(const double& Cost){
-//    this->ChickenFoodCosts = Cost;
-//}
-//void Contabilidade::setChickenSalesProfit(const double& Profit){
-//    this->ChickenSalesProfit = Profit;
-//}
-//void Contabilidade::setEggsSalesProfit(const double& Profit){
-//    this->EggsSalesProfit = Profit;
-//}
