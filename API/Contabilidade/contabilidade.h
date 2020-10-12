@@ -13,6 +13,7 @@ public:
     virtual bool addFinance(Finance&) = 0;
     virtual bool removeFinance(Finance&) = 0;
 
+
     virtual double getTotalValuePerToken(const string&) = 0;
     virtual double* getTokenValuePerMonth(const string&) = 0;
     virtual double* getBalancePerMonth() = 0;
