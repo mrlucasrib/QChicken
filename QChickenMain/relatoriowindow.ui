@@ -20,7 +20,7 @@
       <item>
        <widget class="QLabel" name="label">
         <property name="text">
-         <string>TextLabel</string>
+         <string>Lucro por Frango</string>
         </property>
        </widget>
       </item>
@@ -30,7 +30,7 @@
       <item>
        <widget class="QLabel" name="label_2">
         <property name="text">
-         <string>TextLabel</string>
+         <string>Lucro por Ovos</string>
         </property>
        </widget>
       </item>
@@ -40,7 +40,7 @@
       <item>
        <widget class="QLabel" name="label_3">
         <property name="text">
-         <string>TextLabel</string>
+         <string>Gasto com Alimentação</string>
         </property>
        </widget>
       </item>
@@ -48,6 +48,9 @@
        <widget class="QLCDNumber" name="lcdNumber_3"/>
       </item>
      </layout>
+    </item>
+    <item row="2" column="0">
+     <widget class="QGraphicsView" name="graphicsView_3"/>
     </item>
     <item row="1" column="0">
      <layout class="QHBoxLayout" name="horizontalLayout">
@@ -59,13 +62,13 @@
       </item>
      </layout>
     </item>
-    <item row="2" column="0">
-     <widget class="QGraphicsView" name="graphicsView_3"/>
-    </item>
     <item row="3" column="0">
      <widget class="QPushButton" name="pushButton">
       <property name="text">
-       <string>PushButton</string>
+       <string>imprimir</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
       </property>
      </widget>
     </item>
@@ -77,9 +80,15 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuRelat_eio_FInanceiro">
+    <property name="title">
+     <string>Relatóeio FInanceiro</string>
+    </property>
+   </widget>
+   <addaction name="menuRelat_eio_FInanceiro"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>

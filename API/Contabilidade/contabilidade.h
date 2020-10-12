@@ -7,6 +7,7 @@ class CONTABILIDADE_EXPORT Contabilidade
 {
 public:
     Contabilidade();
+
     bool makeReport();
 };
 
