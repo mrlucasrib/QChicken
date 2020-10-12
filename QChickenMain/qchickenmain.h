@@ -16,6 +16,7 @@ public:
     ~QChickenMain();
 
 private slots:
+    bool checkLineEdits();
     void on_registerbtn_clicked();
 
 private:
