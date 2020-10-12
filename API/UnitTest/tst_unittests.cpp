@@ -27,8 +27,7 @@ unitTests::~unitTests()
 
 void unitTests::test_case1()
 {
-    auto c = new Contabilidade();
-    QTEST_ASSERT(c->makeReport());
+
 }
 
 QTEST_APPLESS_MAIN(unitTests)
