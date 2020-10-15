@@ -80,11 +80,11 @@ static bool createConnection()
     QSqlQuery query;
     query.exec("create table person (id int primary key, "
                "firstname varchar(20), lastname varchar(20))");
-    query.exec("insert into person values(101, 'Danny', 'Young')");
-    query.exec("insert into person values(102, 'Christine', 'Holand')");
-    query.exec("insert into person values(103, 'Lars', 'Gordon')");
-    query.exec("insert into person values(104, 'Roberto', 'Robitaille')");
-    query.exec("insert into person values(105, 'Maria', 'Papadopoulos')");
+    query.exec("insert into person values(101, 'Danny', 'Gerente')");
+    query.exec("insert into person values(102, 'Christine', 'Colaborador')");
+    query.exec("insert into person values(103, 'Lars', 'Colaborador')");
+    query.exec("insert into person values(104, 'Roberto', 'Colaborador')");
+    query.exec("insert into person values(105, 'Maria', 'Administrador')");
 
     query.exec("create table items (id int primary key,"
                                              "imagefile int,"

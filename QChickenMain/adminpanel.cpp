@@ -10,9 +10,9 @@ void AdminPanel::initializeModel(QSqlTableModel *model)
     model->setEditStrategy(QSqlTableModel::OnManualSubmit);
     model->select();
 
-    model->setHeaderData(0, Qt::Horizontal, QObject::tr("ID"));
-    model->setHeaderData(1, Qt::Horizontal, QObject::tr("First name"));
-    model->setHeaderData(2, Qt::Horizontal, QObject::tr("Last name"));
+//    model->setHeaderData(0, Qt::Horizontal, QObject::tr("Codigo do usuario"));
+    model->setHeaderData(1, Qt::Horizontal, QObject::tr("Nome"));
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr("Cargo"));
 }
 
 AdminPanel::AdminPanel(QWidget *parent) :
@@ -24,6 +24,8 @@ AdminPanel::AdminPanel(QWidget *parent) :
     model = new QSqlTableModel(this, db);
     initializeModel(model);
     ui->tableView->setModel(model);
+    ui->tableView->setColumnHidden(0, true);
+
 
 }
 
@@ -45,9 +47,9 @@ void AdminPanel::on_btnadd_clicked()
 
         auto record = model->record();
 
-        record.remove(record.indexOf("id"));
+//        record.remove(record.indexOf("id"));
         record.setValue("firstname", name); // TODO: Corrigir tabela
-        record.setValue("lastname", name);
+        record.setValue("lastname", role);
         //        record.setValue("role", name);
 
         if(model->insertRecord(-1,record)){
