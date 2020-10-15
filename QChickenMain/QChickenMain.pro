@@ -1,5 +1,5 @@
 QT       += core gui
-QT       += charts
+QT       += charts sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -11,6 +11,7 @@ CONFIG += c++11
 
 SOURCES += \
     adminpanel.cpp \
+    dialogadduser.cpp \
     loginwindow.cpp \
     main.cpp \
     qchickenmain.cpp \
@@ -19,6 +20,8 @@ SOURCES += \
 
 HEADERS += \
     adminpanel.h \
+    connection.h \
+    dialogadduser.h \
     loginwindow.h \
     qchickenmain.h \
     registerwindow.h \
@@ -26,6 +29,7 @@ HEADERS += \
 
 FORMS += \
     adminpanel.ui \
+    dialogadduser.ui \
     loginwindow.ui \
     qchickenmain.ui \
     registerwindow.ui \

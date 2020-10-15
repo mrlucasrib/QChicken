@@ -22,42 +22,26 @@
       </property>
       <layout class="QGridLayout" name="gridLayout">
        <item row="0" column="1">
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="deletepb">
          <property name="text">
           <string>Excluir</string>
          </property>
         </widget>
        </item>
-       <item row="1" column="0" colspan="2">
-        <widget class="QTableWidget" name="tableUsers">
-         <column>
-          <property name="text">
-           <string>Nome</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Email</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Cargo</string>
-          </property>
-         </column>
-        </widget>
+       <item row="2" column="0" colspan="2">
+        <widget class="QTableView" name="tableView"/>
        </item>
-       <item row="2" column="0">
-        <widget class="QPushButton" name="btnadd">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="saveEditionspb">
          <property name="text">
-          <string>Adicionar</string>
+          <string>Salvar Ediçoes</string>
          </property>
         </widget>
        </item>
-       <item row="0" column="0">
-        <widget class="QPushButton" name="pushButton">
+       <item row="3" column="0" colspan="2">
+        <widget class="QPushButton" name="btnadd">
          <property name="text">
-          <string>Editar</string>
+          <string>Adicionar</string>
          </property>
         </widget>
        </item>

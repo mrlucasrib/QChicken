@@ -2,7 +2,8 @@
 #define ADMINPANEL_H
 
 #include <QMainWindow>
-
+#include <QSqlTableModel>
+#include "connection.h"
 namespace Ui {
 class AdminPanel;
 }
@@ -19,8 +20,16 @@ private slots:
 
     void on_btnadd_clicked();
 
+    void on_saveEditionspb_clicked();
+
+    void on_deletepb_clicked();
+
 private:
     Ui::AdminPanel *ui;
+    QSqlTableModel *model;
+    void initializeModel(QSqlTableModel*);
+    QSqlDatabase db;
+
 };
 
 #endif // ADMINPANEL_H
