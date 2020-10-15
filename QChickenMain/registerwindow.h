@@ -14,7 +14,10 @@ class RegisterWindow : public QMainWindow
 public:
     explicit RegisterWindow(QWidget *parent = nullptr);
     ~RegisterWindow();
-
+private slots:
+     void on_Register_Button_clicked();
+     void on_Cancel_Button_clicked();
+     bool checkLineEdits();
 private:
     Ui::RegisterWindow *ui;
 };

@@ -1,11 +1,12 @@
 #include "qchickenmain.h"
-
+#include "registerwindow.h"
+#include "loginwindow.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    QChickenMain w;
+     LoginWindow w;
     w.show();
     return a.exec();
 }
