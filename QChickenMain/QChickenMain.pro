@@ -10,6 +10,7 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    adminpanel.cpp \
     loginwindow.cpp \
     main.cpp \
     qchickenmain.cpp \
@@ -17,12 +18,14 @@ SOURCES += \
     relatoriowindow.cpp
 
 HEADERS += \
+    adminpanel.h \
     loginwindow.h \
     qchickenmain.h \
     registerwindow.h \
     relatoriowindow.h
 
 FORMS += \
+    adminpanel.ui \
     loginwindow.ui \
     qchickenmain.ui \
     registerwindow.ui \

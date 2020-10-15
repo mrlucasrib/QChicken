@@ -6,8 +6,10 @@
 class AUTHENTICATION_EXPORT Authentication
 {
 public:
-    Authentication();
-    bool autenticate(std::string email, std::string password);
+//    Authentication();
+    virtual bool autenticate(std::string email, std::string password) = 0;
+
+
     
     
 };
