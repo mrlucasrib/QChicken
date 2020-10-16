@@ -1,5 +1,7 @@
 #include "registerimpl.h"
 
+int RegisterImpl::totalRegister = 0;
+
 RegisterImpl::RegisterImpl() {}
 
 RegisterImpl::~RegisterImpl() {}
@@ -12,10 +14,10 @@ Register* RegisterImpl::createRegister() {
     return new RegisterImpl();
 }
 
-bool RegisterImpl::addUser(User* user){
+bool RegisterImpl::addUser(User& user){
     try{
-        user->setUserId(this->getTotalRegister());
-        userList.insert(pair <int, user*> (user.getUserId(), &user));
+        user.setUserId(this->getTotalRegister());
+        userList.insert(pair<int, User*> (user.getUserId(), &user));
         this->addRegister();
         return true;
     }catch(exception ex){

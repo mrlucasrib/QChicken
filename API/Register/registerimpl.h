@@ -14,7 +14,7 @@ public:
     RegisterImpl();
     ~RegisterImpl();
 
-    bool addUser(User*);
+    bool addUser(User&);
     bool removeUser(const int&);
     User* getUser(const int&);
     map<int, User*> getUserList();

@@ -7,7 +7,7 @@
 class REGISTER_EXPORT Register
 {
 public:
-    virtual bool addUser(User*) = 0;
+    virtual bool addUser(User&) = 0;
     virtual bool removeUser(const int&) = 0;
     virtual User* getUser(const int&) = 0;
 
