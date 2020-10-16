@@ -1,5 +1,5 @@
 QT       += core gui
-QT       += charts
+QT       += charts sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -10,16 +10,29 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    adminpanel.cpp \
+    dialogadduser.cpp \
+    loginwindow.cpp \
     main.cpp \
     qchickenmain.cpp \
+    registerwindow.cpp \
     relatoriowindow.cpp
 
 HEADERS += \
+    adminpanel.h \
+    connection.h \
+    dialogadduser.h \
+    loginwindow.h \
     qchickenmain.h \
+    registerwindow.h \
     relatoriowindow.h
 
 FORMS += \
+    adminpanel.ui \
+    dialogadduser.ui \
+    loginwindow.ui \
     qchickenmain.ui \
+    registerwindow.ui \
     relatoriowindow.ui
 
 # Default rules for deployment.

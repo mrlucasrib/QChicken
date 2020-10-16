@@ -30,13 +30,13 @@ void QChickenMain::on_registerbtn_clicked()
 bool QChickenMain::checkLineEdits()
 {
 
-//bool ok = !ui->spinBox->text().isEmpty()
-//&& !ui->spinBox_2->text().toStdString() == ""
-//&& !ui->spinBox_3->text().isEmpty()
-//&& !ui->spinBox_4->text().isEmpty()
-//&& !ui->spinBox_5->text().isEmpty()
-//&& !ui->spinBox_6->text().isEmpty();
-//return ok;
+bool ok = !ui->spinBox->value() == 0
+&& !ui->spinBox_2->value() == 0
+&& !ui->spinBox_3->value() == 0
+&& !ui->spinBox_4->value() == 0
+&& !ui->spinBox_5->value() == 0
+&& !ui->spinBox_6->value() == 0;
+return ok;
 
 }
 
