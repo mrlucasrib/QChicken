@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>QChicken: Código-Fonte de QChickenMain/loginwindow.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">QChicken
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4d3939a4ddfcbe4754f55c508df5fce8.html">QChickenMain</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">loginwindow.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="loginwindow_8cpp.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="loginwindow_8h.html">loginwindow.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ui__loginwindow_8h.html">ui_loginwindow.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="relatoriowindow_8h.html">relatoriowindow.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="registerwindow_8h.html">registerwindow.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QMessageBox&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_login_window.html#aa4c04d26b299de00156bbf3c32b2a082">    6</a></span>&#160;<a class="code" href="class_login_window.html#aa4c04d26b299de00156bbf3c32b2a082">LoginWindow::LoginWindow</a>(QWidget *parent) :</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    QMainWindow(parent),</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    ui(new <a class="code" href="namespace_ui.html">Ui</a>::<a class="code" href="class_login_window.html">LoginWindow</a>)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_login_window.html#a583f5c7dda98acd3e65791101f9ff2a0">ui</a>-&gt;<a class="code" href="class_ui___login_window.html#af05a045f863b7820c382411b2a4bbcf6">setupUi</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_login_window.html#a0c49fe788dcce29aa50e7d974e1ad158">   13</a></span>&#160;<a class="code" href="class_login_window.html#a0c49fe788dcce29aa50e7d974e1ad158">LoginWindow::~LoginWindow</a>()</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">delete</span> <a class="code" href="class_login_window.html#a583f5c7dda98acd3e65791101f9ff2a0">ui</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_login_window.html#a6e2811518f67688b3f6c7e7f61ecf255">   18</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_login_window.html#a6e2811518f67688b3f6c7e7f61ecf255">LoginWindow::on_Login_Button_clicked</a>()</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_login_window.html#a21c56f105c629733cf165aff227c723e">checkLineEdits</a>()){</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keyword">auto</span> *r = <span class="keyword">new</span> <a class="code" href="class_relatorio_window.html">RelatorioWindow</a>(); <span class="comment">//trocar para painel inicial posteriormente</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      r-&gt;show();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;       QMessageBox::information(0, QString(<span class="stringliteral">&quot;Dados Inválidos&quot;</span>), QString(<span class="stringliteral">&quot;Preencha todos os campos para efetuar o login&quot;</span>), QMessageBox::Ok);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_login_window.html#adfec1996d50b26c87d0169f668ed9d3b">   31</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_login_window.html#adfec1996d50b26c87d0169f668ed9d3b">LoginWindow::on_Register_Button_clicked</a>()</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">auto</span> *r = <span class="keyword">new</span> <a class="code" href="class_register_window.html">RegisterWindow</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    r-&gt;show();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_login_window.html#a21c56f105c629733cf165aff227c723e">   37</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_login_window.html#a21c56f105c629733cf165aff227c723e">LoginWindow::checkLineEdits</a>()</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> ok = !<a class="code" href="class_login_window.html#a583f5c7dda98acd3e65791101f9ff2a0">ui</a>-&gt;<a class="code" href="class_ui___login_window.html#af560aac448b5a4ed296b0e983b053e95">lineEdit</a>-&gt;text().isEmpty()</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    &amp;&amp; !<a class="code" href="class_login_window.html#a583f5c7dda98acd3e65791101f9ff2a0">ui</a>-&gt;<a class="code" href="class_ui___login_window.html#a649c153625d1e3c4ee6efc9c4251f4d1">lineEdit_2</a>-&gt;text().isEmpty();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> ok;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_register_window_html"><div class="ttname"><a href="class_register_window.html">RegisterWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="registerwindow_8h_source.html#l00010">registerwindow.h:10</a></div></div>
+<div class="ttc" id="aclass_ui___login_window_html_af05a045f863b7820c382411b2a4bbcf6"><div class="ttname"><a href="class_ui___login_window.html#af05a045f863b7820c382411b2a4bbcf6">Ui_LoginWindow::setupUi</a></div><div class="ttdeci">void setupUi(QMainWindow *LoginWindow)</div><div class="ttdef"><b>Definition:</b> <a href="ui__loginwindow_8h_source.html#l00047">ui_loginwindow.h:47</a></div></div>
+<div class="ttc" id="aclass_login_window_html"><div class="ttname"><a href="class_login_window.html">LoginWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="loginwindow_8h_source.html#l00010">loginwindow.h:10</a></div></div>
+<div class="ttc" id="aclass_relatorio_window_html"><div class="ttname"><a href="class_relatorio_window.html">RelatorioWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="relatoriowindow_8h_source.html#l00016">relatoriowindow.h:16</a></div></div>
+<div class="ttc" id="aloginwindow_8h_html"><div class="ttname"><a href="loginwindow_8h.html">loginwindow.h</a></div></div>
+<div class="ttc" id="aregisterwindow_8h_html"><div class="ttname"><a href="registerwindow_8h.html">registerwindow.h</a></div></div>
+<div class="ttc" id="arelatoriowindow_8h_html"><div class="ttname"><a href="relatoriowindow_8h.html">relatoriowindow.h</a></div></div>
+<div class="ttc" id="aclass_login_window_html_a6e2811518f67688b3f6c7e7f61ecf255"><div class="ttname"><a href="class_login_window.html#a6e2811518f67688b3f6c7e7f61ecf255">LoginWindow::on_Login_Button_clicked</a></div><div class="ttdeci">void on_Login_Button_clicked()</div><div class="ttdef"><b>Definition:</b> <a href="loginwindow_8cpp_source.html#l00018">loginwindow.cpp:18</a></div></div>
+<div class="ttc" id="aui__loginwindow_8h_html"><div class="ttname"><a href="ui__loginwindow_8h.html">ui_loginwindow.h</a></div></div>
+<div class="ttc" id="aclass_login_window_html_a0c49fe788dcce29aa50e7d974e1ad158"><div class="ttname"><a href="class_login_window.html#a0c49fe788dcce29aa50e7d974e1ad158">LoginWindow::~LoginWindow</a></div><div class="ttdeci">~LoginWindow()</div><div class="ttdef"><b>Definition:</b> <a href="loginwindow_8cpp_source.html#l00013">loginwindow.cpp:13</a></div></div>
+<div class="ttc" id="aclass_login_window_html_a583f5c7dda98acd3e65791101f9ff2a0"><div class="ttname"><a href="class_login_window.html#a583f5c7dda98acd3e65791101f9ff2a0">LoginWindow::ui</a></div><div class="ttdeci">Ui::LoginWindow * ui</div><div class="ttdef"><b>Definition:</b> <a href="loginwindow_8h_source.html#l00024">loginwindow.h:24</a></div></div>
+<div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="ui__adminpanel_8h_source.html#l00102">ui_adminpanel.h:102</a></div></div>
+<div class="ttc" id="aclass_login_window_html_a21c56f105c629733cf165aff227c723e"><div class="ttname"><a href="class_login_window.html#a21c56f105c629733cf165aff227c723e">LoginWindow::checkLineEdits</a></div><div class="ttdeci">bool checkLineEdits()</div><div class="ttdef"><b>Definition:</b> <a href="loginwindow_8cpp_source.html#l00037">loginwindow.cpp:37</a></div></div>
+<div class="ttc" id="aclass_ui___login_window_html_a649c153625d1e3c4ee6efc9c4251f4d1"><div class="ttname"><a href="class_ui___login_window.html#a649c153625d1e3c4ee6efc9c4251f4d1">Ui_LoginWindow::lineEdit_2</a></div><div class="ttdeci">QLineEdit * lineEdit_2</div><div class="ttdef"><b>Definition:</b> <a href="ui__loginwindow_8h_source.html#l00041">ui_loginwindow.h:41</a></div></div>
+<div class="ttc" id="aclass_ui___login_window_html_af560aac448b5a4ed296b0e983b053e95"><div class="ttname"><a href="class_ui___login_window.html#af560aac448b5a4ed296b0e983b053e95">Ui_LoginWindow::lineEdit</a></div><div class="ttdeci">QLineEdit * lineEdit</div><div class="ttdef"><b>Definition:</b> <a href="ui__loginwindow_8h_source.html#l00040">ui_loginwindow.h:40</a></div></div>
+<div class="ttc" id="aclass_login_window_html_adfec1996d50b26c87d0169f668ed9d3b"><div class="ttname"><a href="class_login_window.html#adfec1996d50b26c87d0169f668ed9d3b">LoginWindow::on_Register_Button_clicked</a></div><div class="ttdeci">void on_Register_Button_clicked()</div><div class="ttdef"><b>Definition:</b> <a href="loginwindow_8cpp_source.html#l00031">loginwindow.cpp:31</a></div></div>
+<div class="ttc" id="aclass_login_window_html_aa4c04d26b299de00156bbf3c32b2a082"><div class="ttname"><a href="class_login_window.html#aa4c04d26b299de00156bbf3c32b2a082">LoginWindow::LoginWindow</a></div><div class="ttdeci">LoginWindow(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="loginwindow_8cpp_source.html#l00006">loginwindow.cpp:6</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

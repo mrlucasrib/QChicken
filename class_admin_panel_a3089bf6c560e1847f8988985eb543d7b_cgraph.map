@@ -1,0 +1,6 @@
+<map id="AdminPanel::on_btnadd_clicked" name="AdminPanel::on_btnadd_clicked">
+<area shape="rect" id="node1" title=" " alt="" coords="5,49,181,90"/>
+<area shape="rect" id="node2" href="$class_dialog_add_user.html#aed12515e0fca6c213804524241e7f208" title=" " alt="" coords="230,5,415,32"/>
+<area shape="rect" id="node3" href="$class_dialog_add_user.html#a6d69a305671f0162728e90391b4d9c26" title=" " alt="" coords="229,56,416,83"/>
+<area shape="rect" id="node4" href="$class_dialog_add_user.html#acfade0020a4e2c633c72379be48af321" title=" " alt="" coords="234,107,411,133"/>
+</map>

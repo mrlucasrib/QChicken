@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>QChicken: Código-Fonte de API/Register/registerimpl.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">QChicken
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68d23e7882bbc468776c250e28326a64.html">API</a></li><li class="navelem"><a class="el" href="dir_9a97c3b7ebe830e660e7b8a33d8e2aa4.html">Register</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">registerimpl.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="registerimpl_8cpp.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="registerimpl_8h.html">registerimpl.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_register_impl.html#ad3f05c58c92b018fd39771b30b0716cb">RegisterImpl::totalRegister</a> = 0;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_register_impl.html#a601b77faf4f07f51170821a189fed94f">    5</a></span>&#160;<a class="code" href="class_register_impl.html#a601b77faf4f07f51170821a189fed94f">RegisterImpl::RegisterImpl</a>() {}</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_register_impl.html#ab227f612d7fdd113cab53c9559b0c8f9">    7</a></span>&#160;<a class="code" href="class_register_impl.html#ab227f612d7fdd113cab53c9559b0c8f9">RegisterImpl::~RegisterImpl</a>() {}</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_register.html#a1bd5898afbcab314aa6e27f0fbfdee76">    9</a></span>&#160;<a class="code" href="class_register.html">Register</a>* <a class="code" href="class_register.html#a1bd5898afbcab314aa6e27f0fbfdee76">Register::createRegister</a>() {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_register_impl.html">RegisterImpl</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_register_impl.html#a505a9051efb8758a31da6ce97241741c">   13</a></span>&#160;<a class="code" href="class_register.html">Register</a>* <a class="code" href="class_register_impl.html#a505a9051efb8758a31da6ce97241741c">RegisterImpl::createRegister</a>() {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_register_impl.html#a601b77faf4f07f51170821a189fed94f">RegisterImpl</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_register_impl.html#abfadda2580d6aa8917a94ae7a3012cb4">   17</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_register_impl.html#abfadda2580d6aa8917a94ae7a3012cb4">RegisterImpl::addUser</a>(<a class="code" href="class_user.html">User</a>&amp; user){</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        user.<a class="code" href="class_user.html#a8e058c072b1aef7877ba571b5020cc97">setUserId</a>(this-&gt;<a class="code" href="class_register_impl.html#a3184b9ae44837c55add692562940070b">getTotalRegister</a>());</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="class_register_impl.html#a1311de83c03f0bb78861be2106255e79">userList</a>.insert(pair&lt;int, User*&gt; (user.<a class="code" href="class_user.html#a5c49fcd279d5dc79c18fe705e66a093e">getUserId</a>(), &amp;user));</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        this-&gt;<a class="code" href="class_register_impl.html#a4f4cd1d6bab7b51b2a4fa28e727f1e6a">addRegister</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }<span class="keywordflow">catch</span>(exception ex){</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_register_impl.html#adbf6d0134be29b16caf6634f39d0fa9e">   28</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_register_impl.html#adbf6d0134be29b16caf6634f39d0fa9e">RegisterImpl::removeUser</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; userId){</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_register_impl.html#a1311de83c03f0bb78861be2106255e79">userList</a>.find(userId) != <a class="code" href="class_register_impl.html#a1311de83c03f0bb78861be2106255e79">userList</a>.end()) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <a class="code" href="class_register_impl.html#a1311de83c03f0bb78861be2106255e79">userList</a>.erase(userId);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }<span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }<span class="keywordflow">catch</span>(exception ex){</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_register_impl.html#a1693bc2758801957cc7577ee70e70969">   39</a></span>&#160;<a class="code" href="class_user.html">User</a>* <a class="code" href="class_register_impl.html#a1693bc2758801957cc7577ee70e70969">RegisterImpl::getUser</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; userId){</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span> it : <a class="code" href="class_register_impl.html#a1311de83c03f0bb78861be2106255e79">userList</a>)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">if</span>(it.second-&gt;getUserId() == userId)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordflow">return</span> it.second;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }<span class="keywordflow">catch</span>(exception ex){</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_register_impl.html#a4f4cd1d6bab7b51b2a4fa28e727f1e6a">   50</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_register_impl.html#a4f4cd1d6bab7b51b2a4fa28e727f1e6a">RegisterImpl::addRegister</a>(){</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_register_impl.html#ad3f05c58c92b018fd39771b30b0716cb">RegisterImpl::totalRegister</a> ++;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_register_impl.html#a3184b9ae44837c55add692562940070b">   53</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_register_impl.html#a3184b9ae44837c55add692562940070b">RegisterImpl::getTotalRegister</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_register_impl.html#ad3f05c58c92b018fd39771b30b0716cb">RegisterImpl::totalRegister</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_register_impl_html_a1311de83c03f0bb78861be2106255e79"><div class="ttname"><a href="class_register_impl.html#a1311de83c03f0bb78861be2106255e79">RegisterImpl::userList</a></div><div class="ttdeci">map&lt; int, User * &gt; userList</div><div class="ttdef"><b>Definition:</b> <a href="registerimpl_8h_source.html#l00011">registerimpl.h:11</a></div></div>
+<div class="ttc" id="aregisterimpl_8h_html"><div class="ttname"><a href="registerimpl_8h.html">registerimpl.h</a></div></div>
+<div class="ttc" id="aclass_register_impl_html_a601b77faf4f07f51170821a189fed94f"><div class="ttname"><a href="class_register_impl.html#a601b77faf4f07f51170821a189fed94f">RegisterImpl::RegisterImpl</a></div><div class="ttdeci">RegisterImpl()</div><div class="ttdef"><b>Definition:</b> <a href="registerimpl_8cpp_source.html#l00005">registerimpl.cpp:5</a></div></div>
+<div class="ttc" id="aclass_user_html_a8e058c072b1aef7877ba571b5020cc97"><div class="ttname"><a href="class_user.html#a8e058c072b1aef7877ba571b5020cc97">User::setUserId</a></div><div class="ttdeci">virtual void setUserId(const int &amp;)=0</div></div>
+<div class="ttc" id="aclass_register_html"><div class="ttname"><a href="class_register.html">Register</a></div><div class="ttdef"><b>Definition:</b> <a href="register_8h_source.html#l00007">register.h:7</a></div></div>
+<div class="ttc" id="aclass_register_impl_html_a4f4cd1d6bab7b51b2a4fa28e727f1e6a"><div class="ttname"><a href="class_register_impl.html#a4f4cd1d6bab7b51b2a4fa28e727f1e6a">RegisterImpl::addRegister</a></div><div class="ttdeci">void addRegister()</div><div class="ttdef"><b>Definition:</b> <a href="registerimpl_8cpp_source.html#l00050">registerimpl.cpp:50</a></div></div>
+<div class="ttc" id="aclass_register_impl_html_ab227f612d7fdd113cab53c9559b0c8f9"><div class="ttname"><a href="class_register_impl.html#ab227f612d7fdd113cab53c9559b0c8f9">RegisterImpl::~RegisterImpl</a></div><div class="ttdeci">~RegisterImpl()</div><div class="ttdef"><b>Definition:</b> <a href="registerimpl_8cpp_source.html#l00007">registerimpl.cpp:7</a></div></div>
+<div class="ttc" id="aclass_user_html_a5c49fcd279d5dc79c18fe705e66a093e"><div class="ttname"><a href="class_user.html#a5c49fcd279d5dc79c18fe705e66a093e">User::getUserId</a></div><div class="ttdeci">virtual int getUserId() const =0</div></div>
+<div class="ttc" id="aclass_register_impl_html_a1693bc2758801957cc7577ee70e70969"><div class="ttname"><a href="class_register_impl.html#a1693bc2758801957cc7577ee70e70969">RegisterImpl::getUser</a></div><div class="ttdeci">User * getUser(const int &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="registerimpl_8cpp_source.html#l00039">registerimpl.cpp:39</a></div></div>
+<div class="ttc" id="aclass_user_html"><div class="ttname"><a href="class_user.html">User</a></div><div class="ttdef"><b>Definition:</b> <a href="user_8h_source.html#l00007">user.h:7</a></div></div>
+<div class="ttc" id="aclass_register_impl_html_adbf6d0134be29b16caf6634f39d0fa9e"><div class="ttname"><a href="class_register_impl.html#adbf6d0134be29b16caf6634f39d0fa9e">RegisterImpl::removeUser</a></div><div class="ttdeci">bool removeUser(const int &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="registerimpl_8cpp_source.html#l00028">registerimpl.cpp:28</a></div></div>
+<div class="ttc" id="aclass_register_impl_html_ad3f05c58c92b018fd39771b30b0716cb"><div class="ttname"><a href="class_register_impl.html#ad3f05c58c92b018fd39771b30b0716cb">RegisterImpl::totalRegister</a></div><div class="ttdeci">static int totalRegister</div><div class="ttdef"><b>Definition:</b> <a href="registerimpl_8h_source.html#l00010">registerimpl.h:10</a></div></div>
+<div class="ttc" id="aclass_register_impl_html_abfadda2580d6aa8917a94ae7a3012cb4"><div class="ttname"><a href="class_register_impl.html#abfadda2580d6aa8917a94ae7a3012cb4">RegisterImpl::addUser</a></div><div class="ttdeci">bool addUser(User &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="registerimpl_8cpp_source.html#l00017">registerimpl.cpp:17</a></div></div>
+<div class="ttc" id="aclass_register_impl_html_a505a9051efb8758a31da6ce97241741c"><div class="ttname"><a href="class_register_impl.html#a505a9051efb8758a31da6ce97241741c">RegisterImpl::createRegister</a></div><div class="ttdeci">Register * createRegister()</div><div class="ttdef"><b>Definition:</b> <a href="registerimpl_8cpp_source.html#l00013">registerimpl.cpp:13</a></div></div>
+<div class="ttc" id="aclass_register_html_a1bd5898afbcab314aa6e27f0fbfdee76"><div class="ttname"><a href="class_register.html#a1bd5898afbcab314aa6e27f0fbfdee76">Register::createRegister</a></div><div class="ttdeci">virtual Register * createRegister()=0</div><div class="ttdef"><b>Definition:</b> <a href="registerimpl_8cpp_source.html#l00009">registerimpl.cpp:9</a></div></div>
+<div class="ttc" id="aclass_register_impl_html"><div class="ttname"><a href="class_register_impl.html">RegisterImpl</a></div><div class="ttdef"><b>Definition:</b> <a href="registerimpl_8h_source.html#l00007">registerimpl.h:7</a></div></div>
+<div class="ttc" id="aclass_register_impl_html_a3184b9ae44837c55add692562940070b"><div class="ttname"><a href="class_register_impl.html#a3184b9ae44837c55add692562940070b">RegisterImpl::getTotalRegister</a></div><div class="ttdeci">int getTotalRegister() const</div><div class="ttdef"><b>Definition:</b> <a href="registerimpl_8cpp_source.html#l00053">registerimpl.cpp:53</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>QChicken: Código-Fonte de API/Register/userimpl.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">QChicken
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68d23e7882bbc468776c250e28326a64.html">API</a></li><li class="navelem"><a class="el" href="dir_9a97c3b7ebe830e660e7b8a33d8e2aa4.html">Register</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">userimpl.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="userimpl_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef USERIMPL_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define USERIMPL_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="user_8h.html">user.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_user_impl.html">    5</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_user_impl.html">UserImpl</a> : <span class="keyword">public</span> <a class="code" href="class_user.html">User</a></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_user_impl.html#a6c0680b4f6c865fb1fccdf83f1152307">    8</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_user_impl.html#a15745a8540ff5014b9b479bed865ee22">userName</a>, <a class="code" href="class_user_impl.html#a6c0680b4f6c865fb1fccdf83f1152307">userRole</a>, <a class="code" href="class_user_impl.html#ad22267401b7861aab1a9ae11968adada">email</a>, <a class="code" href="class_user_impl.html#a43fad715265a41dfd46beebe6df25f9c">password</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_user_impl.html#a08863ded420300c565e5129b8372bc73">    9</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_user_impl.html#a08863ded420300c565e5129b8372bc73">userId</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_user_impl.html#a247633b3d3fb9449719bd9c12873b4cb">UserImpl</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_user_impl.html#a247633b3d3fb9449719bd9c12873b4cb">UserImpl</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp;, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp;, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp;, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp;, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp;);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_user_impl.html#ad138e8fe61218dbbe61a13ce9b17decc">~UserImpl</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">//gets</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_user_impl.html#a664abdb48587284878e1badc7598f9c2">getUserName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_user_impl.html#a0b6a27b2e3d22d69d4f5f6ec517fdb1e">getUserRole</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_user_impl.html#add6a78d438f5dc401b220c39c7d40a61">getEmail</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_user_impl.html#a984ad7c34f6893ad4c06bb7d31b0afb0">getPassword</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_user_impl.html#a83beae9b40b92142daefc3d17fb255d6">getUserId</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">// sets</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_user_impl.html#af7c6c0e2d76d3e3bbaf1e06e4da18ba8">setUserName</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp;);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_user_impl.html#ae498533ceb2872a478d689b604e2cb91">setUserId</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp;);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_user_impl.html#a195e5d931cbe48d37e8bb2375f2bc07f">setUserRole</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp;);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_user_impl.html#abbd8347c11bd2ea93d37ec123b42dc6b">setEmail</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp;);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_user_impl.html#a85b0f1b2faebc315a2f5e4a128137101">setPassword</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp;);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_user.html">User</a>* <a class="code" href="class_user_impl.html#a8ad73cce3972956555c2233236eed493">createUser</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_user.html">User</a>* <a class="code" href="class_user_impl.html#a8ad73cce3972956555c2233236eed493">createUser</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp;, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp;, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp;);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif // USERIMPL_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_user_impl_html_ae498533ceb2872a478d689b604e2cb91"><div class="ttname"><a href="class_user_impl.html#ae498533ceb2872a478d689b604e2cb91">UserImpl::setUserId</a></div><div class="ttdeci">void setUserId(const int &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="userimpl_8cpp_source.html#l00041">userimpl.cpp:41</a></div></div>
+<div class="ttc" id="aclass_user_impl_html_a85b0f1b2faebc315a2f5e4a128137101"><div class="ttname"><a href="class_user_impl.html#a85b0f1b2faebc315a2f5e4a128137101">UserImpl::setPassword</a></div><div class="ttdeci">void setPassword(const string &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="userimpl_8cpp_source.html#l00047">userimpl.cpp:47</a></div></div>
+<div class="ttc" id="aclass_user_impl_html_af7c6c0e2d76d3e3bbaf1e06e4da18ba8"><div class="ttname"><a href="class_user_impl.html#af7c6c0e2d76d3e3bbaf1e06e4da18ba8">UserImpl::setUserName</a></div><div class="ttdeci">void setUserName(const string &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="userimpl_8cpp_source.html#l00037">userimpl.cpp:37</a></div></div>
+<div class="ttc" id="aclass_user_impl_html_abbd8347c11bd2ea93d37ec123b42dc6b"><div class="ttname"><a href="class_user_impl.html#abbd8347c11bd2ea93d37ec123b42dc6b">UserImpl::setEmail</a></div><div class="ttdeci">void setEmail(const string &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="userimpl_8cpp_source.html#l00050">userimpl.cpp:50</a></div></div>
+<div class="ttc" id="aclass_user_impl_html_ad138e8fe61218dbbe61a13ce9b17decc"><div class="ttname"><a href="class_user_impl.html#ad138e8fe61218dbbe61a13ce9b17decc">UserImpl::~UserImpl</a></div><div class="ttdeci">~UserImpl()</div><div class="ttdef"><b>Definition:</b> <a href="userimpl_8cpp_source.html#l00007">userimpl.cpp:7</a></div></div>
+<div class="ttc" id="aclass_user_impl_html_a664abdb48587284878e1badc7598f9c2"><div class="ttname"><a href="class_user_impl.html#a664abdb48587284878e1badc7598f9c2">UserImpl::getUserName</a></div><div class="ttdeci">string getUserName() const</div><div class="ttdef"><b>Definition:</b> <a href="userimpl_8cpp_source.html#l00021">userimpl.cpp:21</a></div></div>
+<div class="ttc" id="aclass_user_impl_html_a195e5d931cbe48d37e8bb2375f2bc07f"><div class="ttname"><a href="class_user_impl.html#a195e5d931cbe48d37e8bb2375f2bc07f">UserImpl::setUserRole</a></div><div class="ttdeci">void setUserRole(const string &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="userimpl_8cpp_source.html#l00044">userimpl.cpp:44</a></div></div>
+<div class="ttc" id="aclass_user_impl_html_a15745a8540ff5014b9b479bed865ee22"><div class="ttname"><a href="class_user_impl.html#a15745a8540ff5014b9b479bed865ee22">UserImpl::userName</a></div><div class="ttdeci">string userName</div><div class="ttdef"><b>Definition:</b> <a href="userimpl_8h_source.html#l00008">userimpl.h:8</a></div></div>
+<div class="ttc" id="aclass_user_impl_html_a247633b3d3fb9449719bd9c12873b4cb"><div class="ttname"><a href="class_user_impl.html#a247633b3d3fb9449719bd9c12873b4cb">UserImpl::UserImpl</a></div><div class="ttdeci">UserImpl()</div><div class="ttdef"><b>Definition:</b> <a href="userimpl_8cpp_source.html#l00003">userimpl.cpp:3</a></div></div>
+<div class="ttc" id="aclass_user_impl_html_ad22267401b7861aab1a9ae11968adada"><div class="ttname"><a href="class_user_impl.html#ad22267401b7861aab1a9ae11968adada">UserImpl::email</a></div><div class="ttdeci">string email</div><div class="ttdef"><b>Definition:</b> <a href="userimpl_8h_source.html#l00008">userimpl.h:8</a></div></div>
+<div class="ttc" id="aclass_user_impl_html_add6a78d438f5dc401b220c39c7d40a61"><div class="ttname"><a href="class_user_impl.html#add6a78d438f5dc401b220c39c7d40a61">UserImpl::getEmail</a></div><div class="ttdeci">string getEmail() const</div><div class="ttdef"><b>Definition:</b> <a href="userimpl_8cpp_source.html#l00030">userimpl.cpp:30</a></div></div>
+<div class="ttc" id="aclass_user_impl_html_a83beae9b40b92142daefc3d17fb255d6"><div class="ttname"><a href="class_user_impl.html#a83beae9b40b92142daefc3d17fb255d6">UserImpl::getUserId</a></div><div class="ttdeci">int getUserId() const</div><div class="ttdef"><b>Definition:</b> <a href="userimpl_8cpp_source.html#l00033">userimpl.cpp:33</a></div></div>
+<div class="ttc" id="aclass_user_impl_html"><div class="ttname"><a href="class_user_impl.html">UserImpl</a></div><div class="ttdef"><b>Definition:</b> <a href="userimpl_8h_source.html#l00005">userimpl.h:5</a></div></div>
+<div class="ttc" id="aclass_user_impl_html_a6c0680b4f6c865fb1fccdf83f1152307"><div class="ttname"><a href="class_user_impl.html#a6c0680b4f6c865fb1fccdf83f1152307">UserImpl::userRole</a></div><div class="ttdeci">string userRole</div><div class="ttdef"><b>Definition:</b> <a href="userimpl_8h_source.html#l00008">userimpl.h:8</a></div></div>
+<div class="ttc" id="aclass_user_impl_html_a08863ded420300c565e5129b8372bc73"><div class="ttname"><a href="class_user_impl.html#a08863ded420300c565e5129b8372bc73">UserImpl::userId</a></div><div class="ttdeci">int userId</div><div class="ttdef"><b>Definition:</b> <a href="userimpl_8h_source.html#l00009">userimpl.h:9</a></div></div>
+<div class="ttc" id="aclass_user_html"><div class="ttname"><a href="class_user.html">User</a></div><div class="ttdef"><b>Definition:</b> <a href="user_8h_source.html#l00007">user.h:7</a></div></div>
+<div class="ttc" id="auser_8h_html"><div class="ttname"><a href="user_8h.html">user.h</a></div></div>
+<div class="ttc" id="aclass_user_impl_html_a0b6a27b2e3d22d69d4f5f6ec517fdb1e"><div class="ttname"><a href="class_user_impl.html#a0b6a27b2e3d22d69d4f5f6ec517fdb1e">UserImpl::getUserRole</a></div><div class="ttdeci">string getUserRole() const</div><div class="ttdef"><b>Definition:</b> <a href="userimpl_8cpp_source.html#l00024">userimpl.cpp:24</a></div></div>
+<div class="ttc" id="aclass_user_impl_html_a8ad73cce3972956555c2233236eed493"><div class="ttname"><a href="class_user_impl.html#a8ad73cce3972956555c2233236eed493">UserImpl::createUser</a></div><div class="ttdeci">User * createUser()</div><div class="ttdef"><b>Definition:</b> <a href="userimpl_8cpp_source.html#l00057">userimpl.cpp:57</a></div></div>
+<div class="ttc" id="aclass_user_impl_html_a984ad7c34f6893ad4c06bb7d31b0afb0"><div class="ttname"><a href="class_user_impl.html#a984ad7c34f6893ad4c06bb7d31b0afb0">UserImpl::getPassword</a></div><div class="ttdeci">string getPassword() const</div><div class="ttdef"><b>Definition:</b> <a href="userimpl_8cpp_source.html#l00027">userimpl.cpp:27</a></div></div>
+<div class="ttc" id="aclass_user_impl_html_a43fad715265a41dfd46beebe6df25f9c"><div class="ttname"><a href="class_user_impl.html#a43fad715265a41dfd46beebe6df25f9c">UserImpl::password</a></div><div class="ttdeci">string password</div><div class="ttdef"><b>Definition:</b> <a href="userimpl_8h_source.html#l00008">userimpl.h:8</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

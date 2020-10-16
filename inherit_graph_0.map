@@ -1,0 +1,8 @@
+<map id="Gráfico de Hierarquia de Classes" name="Gráfico de Hierarquia de Classes">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,121,133"/>
+<area shape="rect" id="node2" href="$class_admin_panel.html" title=" " alt="" coords="186,5,286,32"/>
+<area shape="rect" id="node3" href="$class_login_window.html" title=" " alt="" coords="181,56,291,83"/>
+<area shape="rect" id="node4" href="$class_q_chicken_main.html" title=" " alt="" coords="179,107,293,133"/>
+<area shape="rect" id="node5" href="$class_register_window.html" title=" " alt="" coords="172,157,300,184"/>
+<area shape="rect" id="node6" href="$class_relatorio_window.html" title=" " alt="" coords="169,208,303,235"/>
+</map>
