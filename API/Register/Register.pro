@@ -1,7 +1,7 @@
-CONFIG -= qt
+QT -= gui
 
 TEMPLATE = lib
-DEFINES += AUTHENTICATION_LIBRARY
+DEFINES += REGISTER_LIBRARY
 
 CONFIG += c++11
 
@@ -10,11 +10,15 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    authentication.cpp
+    registerimpl.cpp \
+    userimpl.cpp
 
 HEADERS += \
-    Authentication_global.h \
-    authentication.h
+    Register_global.h \
+    register.h \
+    registerimpl.h \
+    user.h \
+    userimpl.h
 
 # Default rules for deployment.
 unix {
