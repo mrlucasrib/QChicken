@@ -71,6 +71,6 @@ RelatorioWindow::~RelatorioWindow()
     delete ui;
 }
 void RelatorioWindow::on_pushButton_clicked(){
-
+   // adidionar funcionalidade print posteriormente
 
 }
