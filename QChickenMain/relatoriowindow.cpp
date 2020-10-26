@@ -10,14 +10,14 @@ RelatorioWindow::RelatorioWindow(QWidget *parent) :
     ui->setupUi(this);
 
     //grafico de linha
-    QLineSeries *series = new QLineSeries();
-    series->append(0,6);
-    series->append(2,4);
-    series->append(3,8);
-    *series << QPointF(10,1) << QPointF(12,3) << QPointF(14,6);
+    QLineSeries *lineSeries = new QLineSeries();
+    lineSeries->append(0,6);
+    lineSeries->append(2,4);
+    lineSeries->append(3,8);
+    *lineSeries << QPointF(10,1) << QPointF(12,3) << QPointF(14,6);
     QChart *chart = new QChart();
     chart->legend()->hide();
-    chart->addSeries(series);
+    chart->addSeries(lineSeries);
     chart->createDefaultAxes();
     chart->setTitle("Balanco financeiro");
     QChartView *chartView = new QChartView(chart);
