@@ -14,7 +14,7 @@ RelatorioWindow::RelatorioWindow(QWidget *parent) :
     series->append(0,6);
     series->append(2,4);
     series->append(3,8);
-    *series << QPointF(11,1) << QPointF(13,3) << QPointF(17,6);
+    *series << QPointF(10,1) << QPointF(12,3) << QPointF(14,6);
     QChart *chart = new QChart();
     chart->legend()->hide();
     chart->addSeries(series);
@@ -28,8 +28,8 @@ RelatorioWindow::RelatorioWindow(QWidget *parent) :
 
     //grafico de pizza
     QPieSeries *pieseries = new QPieSeries();
-    pieseries->append("ovos",80);
-    pieseries->append("Frangos", 20);
+    pieseries->append("ovos",60);
+    pieseries->append("Frangos", 40);
     QChart *piechart= new QChart();
     piechart->addSeries(pieseries);
     piechart->setTitle("Lucro por Produto");
@@ -44,7 +44,7 @@ RelatorioWindow::RelatorioWindow(QWidget *parent) :
    QBarSet *set1 = new QBarSet("ovo");
 
 
-   *set0 << 10 <<20 << 40 << 50 << 60 <<30;
+   *set0 << 10 <<22 << 44 << 51 << 60 <<30;
    *set1 << 20 << 50 << 10 << 5<< 15 << 20;
 
     QBarSeries *barseries = new QBarSeries();
@@ -54,7 +54,7 @@ RelatorioWindow::RelatorioWindow(QWidget *parent) :
 
     QChart *barchart = new QChart();
     barchart->addSeries(barseries);
-    barchart->setTitle("Lucro Mensal por produto");
+    barchart->setTitle("Lucro Mensal por produto (Ovo/Frango)");
     barchart->setAnimationOptions(QChart::SeriesAnimations);
     QStringList categorias;
     categorias << "Mes1" << "Mes2"<< "Mes3" << "Mes4" << "Mes5" << "Mes6";
