@@ -2,6 +2,7 @@
 #include "ui_loginwindow.h"
 #include "relatoriowindow.h"
 #include "registerwindow.h"
+#include "adminpanel.h"
 #include <QMessageBox>
 LoginWindow::LoginWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -19,7 +20,7 @@ void LoginWindow::on_Login_Button_clicked()
 {
     if(checkLineEdits()){
 
-      auto *r = new RelatorioWindow(); //trocar para painel inicial posteriormente
+      auto *r = new AdminPanel(); //trocar para painel inicial posteriormente
       r->show();
     }
     else

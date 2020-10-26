@@ -1,6 +1,7 @@
 #include "registerwindow.h"
 #include "loginwindow.h"
 #include "ui_registerwindow.h"
+#include "adminpanel.h"
 #include <QMessageBox>
 RegisterWindow::RegisterWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -18,7 +19,7 @@ void RegisterWindow::on_Register_Button_clicked()
 {
     if(checkLineEdits()){
 
-      auto *r = new LoginWindow(); // pedir para ele fazer login ou ja direcionar para a pag inicial?
+      auto *r = new AdminPanel(); // pedir para ele fazer login ou ja direcionar para a pag inicial?
       r->show(); // ver como fazer dispose dessa tela para não acumularem telas
     }
     else
@@ -29,7 +30,8 @@ void RegisterWindow::on_Register_Button_clicked()
 
 void RegisterWindow::on_Cancel_Button_clicked()
 {
-   // fazer dispose aqui (voltar a tela de login)
+ this->close();
+    // fazer dispose aqui (voltar a tela de login)
 }
 
 bool RegisterWindow::checkLineEdits()
