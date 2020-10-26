@@ -34,7 +34,7 @@ void LoginWindow::on_Register_Button_clicked()
 {
     auto *r = new RegisterWindow();
     r->show();
-    this->close();
+    //this->close();
 }
 
 bool LoginWindow::checkLineEdits()
