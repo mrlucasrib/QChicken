@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
 
   QChickenMain w;
     //AdminPanel w;
+  //LoginWindow w;
     w.show();
         return a.exec();
 }

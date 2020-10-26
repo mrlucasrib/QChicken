@@ -42,8 +42,7 @@ RelatorioWindow::RelatorioWindow(QWidget *parent) :
 
    QBarSet *set0 = new QBarSet("frango");
    QBarSet *set1 = new QBarSet("ovo");
-
-
+  set0->setLabelColor(Qt::white);
    *set0 << 10 <<22 << 44 << 51 << 60 <<30;
    *set1 << 20 << 50 << 10 << 5<< 15 << 20;
 
@@ -56,9 +55,24 @@ RelatorioWindow::RelatorioWindow(QWidget *parent) :
     barchart->addSeries(barseries);
     barchart->setTitle("Lucro Mensal por produto (Ovo/Frango)");
     barchart->setAnimationOptions(QChart::SeriesAnimations);
+
+    QFont font;
+    font.setPixelSize(18);
+    barchart->setTitleFont(font);
+    chart->setTitleBrush(QBrush(Qt::white));
+    QLinearGradient backgroundGradient;
+       backgroundGradient.setStart(QPointF(0, 0));
+       backgroundGradient.setFinalStop(QPointF(0, 1));
+       backgroundGradient.setColorAt(0.0, QRgb(0xd2d0d1));
+       backgroundGradient.setColorAt(1.0, QRgb(0x4c4547));
+       backgroundGradient.setCoordinateMode(QGradient::ObjectBoundingMode);
+       barchart->setBackgroundBrush(backgroundGradient);
+
     QStringList categorias;
+
     categorias << "Mes1" << "Mes2"<< "Mes3" << "Mes4" << "Mes5" << "Mes6";
     QBarCategoryAxis *axis = new QBarCategoryAxis();
+    axis->setLabelsBrush(Qt::white);
     axis->append(categorias);
     barchart->createDefaultAxes();
     barchart->setAxisX(axis,barseries);
@@ -71,6 +85,6 @@ RelatorioWindow::~RelatorioWindow()
     delete ui;
 }
 void RelatorioWindow::on_pushButton_clicked(){
-   // adidionar funcionalidade print posteriormente
+   // adicionar funcionalidade print posteriormente
 
 }

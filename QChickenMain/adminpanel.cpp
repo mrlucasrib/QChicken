@@ -10,7 +10,7 @@ void AdminPanel::initializeModel(QSqlTableModel *model)
     model->setEditStrategy(QSqlTableModel::OnManualSubmit);
     model->select();
 
-//    model->setHeaderData(0, Qt::Horizontal, QObject::tr("Codigo do usuario"));
+
     model->setHeaderData(1, Qt::Horizontal, QObject::tr("Nome"));
     model->setHeaderData(2, Qt::Horizontal, QObject::tr("Cargo"));
 }
@@ -47,10 +47,10 @@ void AdminPanel::on_btnadd_clicked()
 
         auto record = model->record();
 
-//        record.remove(record.indexOf("id"));
-        record.setValue("firstname", name); // TODO: Corrigir tabela
+
+        record.setValue("firstname", name);
         record.setValue("lastname", role);
-        //        record.setValue("role", name);
+
 
         if(model->insertRecord(-1,record)){
             model->submitAll();
@@ -67,6 +67,8 @@ void AdminPanel::on_saveEditionspb_clicked()
 {
     if(!model->submitAll())
         QMessageBox::critical(this,"Erro ao salvar" , model->lastError().text(), QMessageBox::Cancel);
+    else
+         QMessageBox::information(0, QString("Dados gravados"), QString("Mudancas feitas com sucesso"), QMessageBox::Ok);
 }
 
 void AdminPanel::on_deletepb_clicked()
@@ -75,7 +77,11 @@ void AdminPanel::on_deletepb_clicked()
     if(select->hasSelection()){
         auto item = select->selectedRows();
         auto index = item.first().row();
-        model->removeRow(index);}else
+
+        model->removeRow(index);
+
+    }
+    else
         QMessageBox::critical(this,"Erro excluir" ,"Selecione a partir dos numeros	", QMessageBox::Cancel);
 
 }
