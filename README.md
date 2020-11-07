@@ -3,7 +3,7 @@
   <a href="#" target="_blank">
     <img alt="License: AGPL--v3" src="https://img.shields.io/badge/License-AGPL--v3-yellow.svg" />
   </a>
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/mrlucasrib/PaymentControl?style=social">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/mrlucasrib/QChicken?style=social">
   <a href="https://twitter.com/mrlucasrib" target="_blank">
     <img alt="Twitter: mrlucasrib" src="https://img.shields.io/twitter/follow/mrlucasrib.svg?style=social" />
   </a>
