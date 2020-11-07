@@ -23,9 +23,10 @@ This project was developed with the following technologies:
 
 ## 💻 Project
 
-This is a college project, where we put the learned content into practice, they are
+This is a college project in the **Software Engineering** discipline, where we put the learned content into practice, they are
 - Software Architecture
 - TDD (Test Driven Development)
+- BDD (Dehavior Driven Development)
 - Design Patterns
 - Code documentation
 - Componentization (linked libraries)
